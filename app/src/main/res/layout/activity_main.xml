@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.jbcaudill.bandbusiness.MainActivity">
+    
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        android:layout_marginStart="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="8dp"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/bliz"
+            android:src="@drawable/bliz2"
+            android:scaleType="center"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:paddingTop="16dp"
+             />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/bliz"
+            android:text="Blizzard Entertainment"
+            android:gravity="center"
+            android:textSize="32dp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:paddingTop="16dp"
+            android:id="@+id/name"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/name"
+            android:text="An American video game publishing company known for such games as World of Warcraft, the Diablo series, and Overwatch."
+            android:gravity="center"
+            android:textSize="16sp"
+            android:paddingTop="16dp"
+            android:id="@+id/desc"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/desc"
+            android:text="Contact Information:"
+            android:textColor="#000000"
+            android:textSize="28sp"
+            android:paddingTop="32dp"
+            android:id="@+id/info"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/info"
+            android:text="Address: 1 Blizzard Way, Irvine, CA 92618
+Phone Number: (949) 955-1380
+Hours: 12–9 PM
+Website: www.blizzard.com/"
+            android:textSize="18sp"
+            android:paddingTop="12dp"
+            android:id="@+id/cont"
+            />
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>
